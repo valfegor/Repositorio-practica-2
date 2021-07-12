@@ -5,6 +5,7 @@ let opciones3 = document.getElementById("cajaopci3");
 let opciones4 = document.getElementById("cajaopci4");
 let preg = document.getElementById("pregunta");
 let mospunt = document.getElementById("mos_punt");
+let siguiente = document.getElementById("siguiente-btn");
 let index = 0;
 let intento = 0;
 let puntaje = 0;
@@ -66,4 +67,18 @@ else{
 
 mospunt.innerHTML = puntaje;
 console.log(opcionclic)
+//de esta manera bloqueo las respuestas
+$(".cajaopciones span").attr("onclick",""); 
+
+}
+
+siguiente.onclick = function(){
+siguientepreg();
+$(".cajaopciones span").removeClass();
+$(".cajaopciones span").attr("onclick","respuesta(this)"); 
+}
+
+function siguientepreg(){
+index ++;
+imprimir(index);
 }

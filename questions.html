@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web Turoial Guru - Online Quiz</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+      <div class="box">
+          <div class="titulo">
+              Quiz ONLINEE PARA EL MUNDO
+          </div>
+          <div class="header">
+              <div class="cajapuntaje">
+                Puntaje : <span id="mos_punt"></span>
+              </div>
+              <div class="cajatiempo">
+                Tiempo restante : <span id="tiempito"></span>
+              </div>
+          </div>
+          <div class="cajapregunta" id="pregunta">
+          </div>
+          <div class="cajaopciones">
+            <span id="cajaopci1" data-opt="1" onclick="respuesta(this)"></span>
+            <span id="cajaopci2" data-opt="2" onclick="respuesta(this)"></span>
+            <span id="cajaopci3" data-opt="3" onclick="respuesta(this)"></span>
+            <span id="cajaopci4" data-opt="4" onclick="respuesta(this)"></span>
+          </div>
+          <div class="footer">
+            <button>Siguiente</button>
+            <button>Mostar resultado</button>
+        </div>
+      </div>
+    </body>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/script.js"></script>
+</html>
